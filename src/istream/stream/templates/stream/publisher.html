@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h2>{{ publisher.description }}</h2>
+
+
+<div class="panel-body">
+  <video id="example_video_1" class="video-js vjs-default-skin"
+    controls preload="auto" width="640" height="264"
+    data-setup='{"example_option":true}'>
+   <source src="rtmp://docker.chibiegg.net/live/sample1" type='rtmp/mp4' />
+   <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+</div>
+
+
+
+
+{% endblock %}
